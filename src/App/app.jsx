@@ -2,9 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const App = () => (
-    <React.Fragment>
-        <BodyContainerStyle />
-    </React.Fragment>
+    <BodyContainerStyle />
 );
 
 const BodyContainerStyle = styled.div``;
