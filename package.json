@@ -8,13 +8,13 @@
   "description": "React JS Bootstrap",
   "main": "index.js",
   "scripts": {
-    "update": "npm outdated && npm update && npm audit fix",
+    "update": "yarn outdated && yarn upgrade --latest && yarn audit fix",
     "lint": "node node_modules\\eslint\\bin\\eslint.js .\\src\\**",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
     "test:verbose": "jest --verbose",
-    "test:commit": "npm run lint && npm run test:verbose && npm outdated",
+    "test:commit": "yarn lint && yarn test:verbose && yarn outdated",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --hot --open --devtool source-map"
   },
