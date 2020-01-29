@@ -1,8 +1,8 @@
-import { mount } from 'enzyme';
+import { render } from '@testing-library/react';
 import * as React from 'react';
 import App from './app';
 
-it('contains a body container', () => {
-    const wrapper = mount(<App />);
-    expect(wrapper.exists('div')).toBe(true);
+it('renders the app', () => {
+    const document = render(<App />);
+    expect(document).toBeTruthy();
 });
